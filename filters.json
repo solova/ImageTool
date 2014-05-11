@@ -3,7 +3,7 @@
 		"id": 1,
 		"uid": "blur",
 		"name": "Blur",
-		"file": "/filters/blur.js",
+		"file": "filters/blur.js",
 		"min": 0,
 		"max": 5,
 		"value": 0
@@ -12,7 +12,7 @@
 		"id": 2,
 		"uid": "sharp",
 		"name": "Gaussian",
-		"file": "/filters/gaussian.js",
+		"file": "filters/gaussian.js",
 		"min": 0,
 		"max": 10,
 		"value": 0

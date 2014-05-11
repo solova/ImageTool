@@ -1,0 +1,21 @@
+{
+  "name": "Image Tool",
+  "version": "0.0.0",
+  "authors": [
+    "Aleksandr Solovey <xelbox@gmail.com>"
+  ],
+  "description": "The image filters",
+  "moduleType": [
+    "amd"
+  ],
+  "license": "MIT",
+  "dependencies": {
+      "requirejs": "*",
+      "reset-css": "*",
+      "Sortable": "*",
+      "exoskeleton": "*",
+      "lodash": "*",
+      "jquery": "*",
+      "requirejs-text": "*"
+  }
+}

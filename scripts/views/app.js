@@ -34,7 +34,7 @@ define([
 			// this.listenTo(Todos, 'all', this.render);
 
 			// Todos.fetch({reset:true});
-			this.image = new Img({url: '/data/image1.jpg'});
+			this.image = new Img({url: 'data/image1.jpg'});
 			Filters.fetch({reset: true});
 		},
 

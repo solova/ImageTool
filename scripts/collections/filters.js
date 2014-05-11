@@ -7,7 +7,7 @@ define([
 
 	var FiltersCollection = Backbone.Collection.extend({
 		model: image,
-		url: '/filters.json'
+		url: 'filters.json'
 	});
 
 	return new FiltersCollection();

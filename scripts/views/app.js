@@ -14,26 +14,11 @@ define([
 
 	var AppView = Backbone.View.extend({
 
-		// Instead of generating a new element, bind to the existing skeleton of
-		// the App already present in the HTML.
 		el: 'body',
 
-		// Compile our stats template
 		template: _.template(template),
 
 		initialize: function () {
-			// this.allCheckbox = this.$('#toggle-all')[0];
-			// this.$input = this.$('#new-todo');
-			// this.$footer = this.$('#footer');
-			// this.$main = this.$('#main');
-
-			// this.listenTo(Todos, 'add', this.addOne);
-			// this.listenTo(Todos, 'reset', this.addAll);
-			// this.listenTo(Todos, 'change:completed', this.filterOne);
-			// this.listenTo(Todos, 'filter', this.filterAll);
-			// this.listenTo(Todos, 'all', this.render);
-
-			// Todos.fetch({reset:true});
 			this.image = new Img({url: 'data/image1.jpg'});
 			Filters.fetch({reset: true});
 		},

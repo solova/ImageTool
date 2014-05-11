@@ -18,13 +18,13 @@ define([
 
 		foo: function(){
 			var that = this;
-			var worker = new Worker('/filters/noise.js');
+			var worker = new Worker('/filters/mosaic.js');
 
 			worker.postMessage({
 	            imagedata: this.originalData, 
 	            width: this.canvas.width,
 	            height: this.canvas.height,
-	            radius: 100
+	            radius: 10
 	        });
 	            
 	        worker.onmessage = function(event) 

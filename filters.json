@@ -25,5 +25,14 @@
 		"min": 0,
 		"max": 128,
 		"value": 0
+	},
+	{
+		"id": 5,
+		"uid": "mosaic",
+		"name": "Mosaic",
+		"file": "filters/mosaic.js",
+		"min": 0,
+		"max": 10,
+		"value": 0
 	}
 ]

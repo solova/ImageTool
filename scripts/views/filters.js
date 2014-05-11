@@ -30,7 +30,6 @@ define([
 			var notappl = true;
 			this.collection.forEach(function(model){
 				if (notappl && model.get('value') != 0){
-					console.log(model.get('name'));
 					notappl = false;
 					var worker = new Worker(model.get('file'));
 
@@ -40,10 +39,6 @@ define([
 			            height: CANVAS.canvas.height,
 			            radius: parseInt(model.get('value'))
 			        });
-
-			        console.log({width: CANVAS.canvas.width,
-			            height: CANVAS.canvas.height,
-			            radius: model.get('value')});
 			            
 			        worker.onmessage = function(event) 
 			        {
@@ -59,6 +54,9 @@ define([
 			        }
 				}
 			}, this);
+			if (notappl){
+				CANVAS.ctx.putImageData(CANVAS.originalData,0,0); 
+			}
 		},
 
 		changeValue: function(event) {

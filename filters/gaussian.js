@@ -1,4 +1,4 @@
-onmessage = function (event) {
+self.onmessage = function (event) {
     function BlurStack() {
         this.r = 0;
         this.g = 0;

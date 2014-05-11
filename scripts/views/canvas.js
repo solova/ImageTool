@@ -18,13 +18,13 @@ define([
 
 		foo: function(){
 			var that = this;
-			var worker = new Worker('/filters/gaussian.js');
+			var worker = new Worker('/filters/noise.js');
 
 			worker.postMessage({
 	            imagedata: this.originalData, 
 	            width: this.canvas.width,
 	            height: this.canvas.height,
-	            radius: 5
+	            radius: 100
 	        });
 	            
 	        worker.onmessage = function(event) 
@@ -50,7 +50,6 @@ define([
 		},
 
 		render: function () {
-			console.log('render canvas');
 			if (this.model.get('loaded')){
 				if (!this.canvas) {
 					this.canvas = document.getElementById(this.id);

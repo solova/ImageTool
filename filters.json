@@ -16,5 +16,14 @@
 		"min": 0,
 		"max": 10,
 		"value": 0
+	},
+	{
+		"id": 4,
+		"uid": "noise",
+		"name": "Noise",
+		"file": "filters/noise.js",
+		"min": 0,
+		"max": 128,
+		"value": 0
 	}
 ]
